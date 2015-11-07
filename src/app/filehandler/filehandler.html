@@ -1,0 +1,8 @@
+<form>
+    <label>Käännöstekstit</label><br/>
+    <input type="file" data-file-read="files.translationFile" /><br/>
+    <label>Tekstitystiedosto (.ass)</label><br/>
+    <input type="file" data-file-read="files.assFile" /><br/><br/>
+    <button data-ng-click="runReplace()">Käännä</button><br/>
+    <a data-ng-show="translationReady" href="{{translationDownload}}" download="{{downloadFileName}}">Käännetty tiedosto</a>
+</form>
